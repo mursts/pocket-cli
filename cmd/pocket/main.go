@@ -48,8 +48,8 @@ func init() {
 
 func main() {
 	app := cli.NewApp()
-	app.Name = "go-pocket"
-	app.Usage = "A Pocket client"
+	app.Name = "pocket-cli"
+	app.Usage = "A Pocket command line client"
 	app.Version = version
 
 	formatFlag := cli.StringFlag{
