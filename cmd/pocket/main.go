@@ -114,18 +114,20 @@ func main() {
 			},
 		},
 		{
-			Name:    "add",
-			Aliases: []string{"a"},
-			Usage:   "Add item",
-			Action:  commandAdd,
+			Name:      "add",
+			Aliases:   []string{"a"},
+			Usage:     "Add item",
+			Action:    commandAdd,
+			ArgsUsage: "<url>",
 			Flags: []cli.Flag{
 				titleFlag,
 				tagsFlag,
 			},
 		},
 		{
-			Name:   "archive",
-			Usage:  "Archive item",
+			Name:      "archive",
+			Usage:     "Archive item",
+			ArgsUsage: "<itemid>",
 			Action: commandArchive,
 		},
 	}
